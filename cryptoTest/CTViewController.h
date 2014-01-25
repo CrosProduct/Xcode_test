@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CTViewController : UIViewController
+@interface CTViewController : UIViewController{
+    IBOutlet UILabel *md5LBL, *blowfishLBL;
+    IBOutlet UITextField *inputTF;
+}
+
+-(IBAction)encryptIBA:(UIButton*)sender;
 
 @end
